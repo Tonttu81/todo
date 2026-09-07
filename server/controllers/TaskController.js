@@ -26,7 +26,7 @@ const createTask = async (req, res, next) => {
     }
 }
 
-const deleteTask = async (req, res, next) => {
+const removeTask = async (req, res, next) => {
     try {
         const { id } = req.params
     
@@ -44,4 +44,4 @@ const deleteTask = async (req, res, next) => {
     }
 }
 
-export { getTasks, createTask, deleteTask }
+export { getTasks, createTask, removeTask }
